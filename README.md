@@ -20,7 +20,7 @@ Platformatec blog:
 
 Here are the steps of my bare-bones implementation:
 
-##### Configure my tags field in the rails_admin initializer.
+##### Configure my tags field in the rails_admin initializer:
 
     config.model 'Bug' do
       list do
@@ -34,6 +34,8 @@ rails_admin currently
 [omits array fields](https://github.com/sferik/rails_admin/pull/1259) since
 they didn't work well. `searchable true` adds the field to the interface.
 The tags field now also appears in the `Add filter` drop-down menu.
+
+##### Give it a try
 
 Try `Add filter`, tags, enter any value, then Refresh. A string array looks
 like a string to rails_admin, and the query fails:
