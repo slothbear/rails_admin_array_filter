@@ -16,6 +16,32 @@ RailsAdmin.config do |config|
 
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
 
+  config.navigation_static_links = {
+    'Google' => 'http://www.google.com'
+  }
+
+  config.model 'Bug' do
+      list do
+        field :tags do
+          filterable true
+          searchable :tags
+          search_operator 'OVERLAPS_with'
+        end
+        field :description do
+          filterable false
+        end
+        #field :tags
+      end
+      edit do
+        field :description
+        field :tags
+      end
+      show do
+        field :description
+        field :tags
+      end
+    end
+
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
