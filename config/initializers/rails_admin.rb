@@ -21,26 +21,28 @@ RailsAdmin.config do |config|
   }
 
   config.model 'Bug' do
-      list do
-        field :tags do
-          filterable true
-          searchable :tags
-          search_operator 'OVERLAPS_with'
-        end
-        field :description do
-          filterable false
-        end
-        #field :tags
+
+    list do
+      field :description do
+        filterable false
       end
-      edit do
-        field :description
-        field :tags
-      end
-      show do
-        field :description
-        field :tags
+      field :tags do
+        search_operator 'starts222_with222'
+        filterable true
+        searchable :tags
       end
     end
+
+    edit do
+      field :description
+      field :tags
+    end
+
+    show do
+      field :description
+      field :tags
+    end
+  end
 
   config.actions do
     dashboard                     # mandatory
@@ -57,4 +59,5 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
 end
