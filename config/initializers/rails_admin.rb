@@ -23,13 +23,8 @@ RailsAdmin.config do |config|
   config.model 'Bug' do
 
     list do
-      field :description do
-        filterable false
-      end
       field :tags do
-        filterable true
-        search_operator 'ends_with'
-        searchable :tags
+        searchable true
       end
     end
 
