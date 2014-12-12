@@ -27,8 +27,8 @@ RailsAdmin.config do |config|
         filterable false
       end
       field :tags do
-        search_operator 'starts222_with222'
         filterable true
+        search_operator 'ends_with'
         searchable :tags
       end
     end
