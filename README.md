@@ -37,10 +37,11 @@ The tags field now also appears in the `Add filter` drop-down menu.
 
 ##### Give it a try
 
-Try `Add filter`, tags, enter any value, then Refresh. A string array looks
-like a string to rails_admin, and the query fails:
+Choose the `tags` field from the `Add filter`, enter any value in the 
+search field, then press the `Refresh` button. The query fails:
 
     HINT:  No function matches the given name and argument types.
     You might need to add explicit type casts.
-    : SELECT  "bugs".* FROM "bugs" WHERE ((LOWER(bugs.tags) 
-    ILIKE '%def%'))  ORDER BY bugs.id desc LIMIT 20 OFFSET 0
+    : SELECT  "bugs".* FROM "bugs"
+    WHERE ((LOWER(bugs.tags) ILIKE '%def%'))
+    ORDER BY bugs.id desc LIMIT 20 OFFSET 0
