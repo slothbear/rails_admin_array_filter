@@ -90,8 +90,4 @@ Remaining challenges:
 * Find the right place for the `contains` operator logic.
 * Make the new array filter work for any column
 * Add a filter `search_operator` for array contains
-* Remove the other search operators (e.g. starts_with, ends_with)
-
-
-* detect array without app-specific column name
-* set search_operator
+* Remove irrelevant search operators (e.g. starts_with, ends_with)
