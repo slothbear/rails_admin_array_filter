@@ -92,3 +92,5 @@ Remaining challenges:
 * Add a filter `search_operator` for array contains
 * Remove irrelevant search operators (e.g. starts_with, ends_with)
 * Update related record counts after bulk_delete
+* Can I change the label of for an "Add filter"? My custom filter
+doesn't select everything that matches (internal requirements).
