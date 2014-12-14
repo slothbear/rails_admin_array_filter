@@ -91,3 +91,4 @@ Remaining challenges:
 * Make the new array filter work for any column
 * Add a filter `search_operator` for array contains
 * Remove irrelevant search operators (e.g. starts_with, ends_with)
+* Update related record counts after bulk_delete
