@@ -30,11 +30,13 @@ RailsAdmin.config do |config|
 
     edit do
       field :description
+      field :assignment
       field :tags
     end
 
     show do
       field :description
+      field :assignment
       field :tags
     end
   end
